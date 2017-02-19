@@ -1,0 +1,118 @@
+@import url(styles/normalize.css);
+@import url(styles/skeleton.css);
+body {
+  background: #f1f1f1;
+  font-family: 'Open Sans', sans-serif; }
+
+h2 {
+  color: #0f81f8;
+  font-size: 32px; }
+
+h3 {
+  background: #0f81f8;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 4px 0;
+  margin-bottom: 0;
+  letter-spacing: 0.5px; }
+
+h4 {
+  font-size: 24px; }
+
+ul {
+  list-style: disc; }
+
+ul, ol {
+  margin-left: 30px; }
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  background: white; }
+
+.header {
+  height: 240px;
+  padding-top: 24px; }
+  .header .menu {
+    text-align: right; }
+    .header .menu a {
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      margin: 20px;
+      padding: 6px 10px; }
+      .header .menu a:hover {
+        border-color: white; }
+
+.buttons a {
+  text-align: center;
+  text-decoration: none; }
+  .buttons a img {
+    display: block;
+    margin: 0 auto; }
+  .buttons a h3 {
+    margin-top: 20px;
+    font-size: 18px; }
+
+section.container {
+  margin: 30px auto; }
+
+section.wide {
+  max-width: 1200px;
+  width: 100%; }
+  section.wide .inner {
+    max-width: 960px;
+    margin: 0 auto; }
+
+section.blue {
+  background: #0f81f8;
+  padding: 30px 0; }
+  section.blue p, section.blue h2 {
+    color: white; }
+
+section.divider {
+  background: transparent non top left no-repeat;
+  height: 193px; }
+
+section.top {
+  margin-top: 0;
+  background: transparent none top left no-repeat; }
+  section.top p {
+    color: white; }
+  section.top h1 {
+    color: white;
+    font-size: 36px; }
+
+.sign_up input {
+  background: #5F6975;
+  border-radius: 0;
+  font-weight: bold;
+  margin: 1px 0;
+  border: none;
+  color: white; }
+  .sign_up input:focus {
+    outline-width: 0;
+    border: 0; }
+  .sign_up input::-webkit-input-placeholder {
+    color: white; }
+  .sign_up input::-moz-placeholder {
+    color: white; }
+  .sign_up input:-ms-input-placeh {
+    color: white; }
+  .sign_up input:-moz-placeholder {
+    color: white; }
+
+.sign_up input[type=submit] {
+  background: #0f81f8;
+  color: white;
+  margin: 0 auto;
+  display: block;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 2px 30px;
+  line-height: 18px; }

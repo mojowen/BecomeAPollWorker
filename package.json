@@ -4,8 +4,11 @@
   "description": "Get engaged!",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors",
-    "build": "webpack -p",
+    "start": "npm run watch & npm run livereload & npm run static",
+    "watch": "npm run css",
+    "css": "node-sass -w styles/app.sass app.css",
+    "livereload": "livereloadify .",
+    "static": "static ."
   },
   "repository": {
     "type": "git",
@@ -21,13 +24,9 @@
     "skeleton-css": "^2.0.4"
   },
   "devDependencies": {
-    "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "^2.0.0-rc.3",
-    "file-loader": "^0.10.0",
-    "node-sass": "^4.5.0",
-    "sass-loader": "^6.0.1",
-    "style-loader": "^0.13.1",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "node-sass": "^3.7.0",
+    "livereloadify": "^2.0.0",
+    "node-static": "^0.7.7",
+    "watchify": "^3.7.0"
   }
 }
