@@ -1,5 +1,5 @@
-@import url(styles/normalize.css);
-@import url(styles/skeleton.css);
+@import url(node_modules/skeleton-css/css/normalize.css);
+@import url(node_modules/skeleton-css/css/skeleton.css);
 body {
   background: #f1f1f1;
   font-family: 'Open Sans', sans-serif; }
@@ -33,20 +33,29 @@ ul, ol {
   background: white; }
 
 .header {
-  height: 240px;
+  height: 220px;
   padding-top: 24px; }
   .header .menu {
-    text-align: right; }
+    text-align: left; }
     .header .menu a {
       font-weight: bold;
       text-decoration: none;
       color: white;
-      border: 1px solid transparent;
+      border: 1px solid white;
       border-radius: 4px;
-      margin: 20px;
-      padding: 6px 10px; }
+      margin: 4px 20px;
+      padding: 6px 10px;
+      display: inline-block;
+      width: 30%; }
+
+@media (min-width: 750px) {
+  .header .menu {
+    text-align: right; }
+    .header .menu a {
+      width: auto;
+      border-color: transparent; }
       .header .menu a:hover {
-        border-color: white; }
+        border-color: white; } }
 
 .buttons a {
   text-align: center;
@@ -61,12 +70,17 @@ ul, ol {
 section.container {
   margin: 30px auto; }
 
+@media (min-width: 750px) {
+  section.wide .inner {
+    width: 100%; } }
+
 section.wide {
   max-width: 1200px;
   width: 100%; }
   section.wide .inner {
     max-width: 960px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 85%; }
 
 section.blue {
   background: #0f81f8;
@@ -87,6 +101,12 @@ section.top {
     color: white;
     font-size: 36px; }
 
+.sign_up .form-row input + input {
+  margin-left: -1px; }
+
+.sign_up .form-row input:last-child {
+  float: right; }
+
 .sign_up input {
   background: #5F6975;
   border-radius: 0;
@@ -94,6 +114,8 @@ section.top {
   margin: 1px 0;
   border: none;
   color: white; }
+  .sign_up input[type=text] {
+    display: inline-block; }
   .sign_up input:focus {
     outline-width: 0;
     border: 0; }
