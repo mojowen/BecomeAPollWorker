@@ -1,5 +1,5 @@
-@import url(./normalize.css);
-@import url(./skeleton.css);
+@import url(/styles/normalize.css);
+@import url(/styles/skeleton.css);
 body {
   background: #f1f1f1;
   font-family: 'Open Sans', sans-serif; }
