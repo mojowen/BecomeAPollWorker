@@ -1,7 +1,7 @@
 @import url(/styles/normalize.css);
 @import url(/styles/skeleton.css);
 body {
-  background: #f1f1f1;
+  background: #0f81f8;
   font-family: 'Open Sans', sans-serif; }
 
 h2 {
@@ -27,7 +27,7 @@ ul, ol {
   margin-left: 30px; }
 
 .page {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: block;
   background: white; }
@@ -75,7 +75,7 @@ section.container {
     width: 100%; } }
 
 section.wide {
-  max-width: 1200px;
+  max-width: 100%;
   width: 100%; }
   section.wide .inner {
     max-width: 960px;
